@@ -1,0 +1,152 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!css files>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    @**######Title Div Property######**@
+
+
+    <style>
+        #margin {
+            margin-top: 0cm;
+            margin-left:-5cm;
+            margin-right:-5cm;
+        }
+
+        #property {
+            text-align: center;
+            margin-top: 0cm;
+            margin-left: 8cm;
+            margin-right: 5cm;
+        }
+
+        #footer {
+            background-color: black;
+            color: white;
+            clear: both;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 3px;
+        }
+       
+   
+    </style>
+    <style type="text/css">
+	.navbar{
+		margin-top: 20px;
+	}
+</style>
+
+
+    @*****    Slider    ******@
+
+
+   
+   
+
+</head>
+<body style="background-color:lightblue">
+
+    @**Start hearder**@
+    <div style="width:1327px;height:155px;background-color:aqua">
+
+
+        @**#########  LOGO IMAGE  #######**@
+        <div style="width:100px;height:180px" class="pull-left">
+            <a href="#">
+                <img src="~/Images/640_new-digital-library-image.jpg" style="height:178.5px;width:200px" />
+            </a>
+        </div>
+
+        @**#########  Title  #######**@
+        <div style="width:1127px;height:180px;background-color:skyblue" class="pull-right">
+            <div align="justify" style="margin-left:200px">
+                <h2>
+                    <font size="20" style="align-content:space-around;margin-bottom:3cm;font-family:'Lucida Sans Typewriter'">
+                        Digital Library
+                    </font>
+                </h2>
+            </div>
+            <div align="justify" style="margin-left:295px">
+
+                <button type="button" class="btn btn-default">
+                    <b> Any Time , Any Where </b><span class="glyphicon glyphicon-search"></span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+
+    @**Navigation bar**@
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Digital World</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/User/Index">Home</a></li>
+                <li><a href="/User/AboutUs">About US</a></li>
+                
+                <li><a href="/User/Services">Services</a></li>
+                <li><a href="/User/Collection">Collection</a></li>
+                <li><a href="/User/News">News and Events</a></li>
+                <li><a href="/User/ContactUs">Contact US</a></li>
+                
+               
+                
+            </ul>
+           
+
+            <ul class="nav navbar-nav navbar-right">
+               
+               
+                <li><a href="/User/LogIn"><span class="glyphicon glyphicon-user"></span> Log In</a></li>
+                <li><a href="/User/SignUp"><span class="glyphicon glyphicon-log-in"></span>Sign Up</a></li>
+            </ul>
+
+            <div style="color:White;margin-top:0.40cm">
+               
+           <input type="search" name="Search" style="color:black;width:150px;height:25px"/>
+                <span class="glyphicon glyphicon-search"></span> 
+        </div>
+            </div>
+    </nav>
+
+
+                             @***    Left Slider    **@
+   
+
+    @RenderBody()
+
+
+
+    @**Footer**@
+    <div id="footer">
+        Copyright © Digital Library.com
+    </div>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+
+    <!js files>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/dropdown.js"></script>
+    <script src="~/Scripts/button.js"></script>
+    <script src="~/Scripts/carousel.js"></script>
+    <script src="~/Scripts/collapse.js"></script>
+
+
+</body>
+</html>
